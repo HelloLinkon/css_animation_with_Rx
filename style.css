@@ -1,0 +1,50 @@
+#card {
+  height: 50vmin;
+  width: 90vmin;
+  background-color: white;
+  background-image: url(https://c1.staticflickr.com/4/3001/2723711375_0c036038d6_b.jpg);
+  background-size: cover;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+}
+#card:before, #card:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(1px);
+}
+#card:before {
+  transform: translateZ(1rem);
+  box-shadow: 68vmin 28vmin 0 white, 62vmin 30vmin 0 white, 51vmin 18vmin 0 white, 79vmin 37vmin 0 white, 7vmin 7vmin 0 white, 25vmin 19vmin 0 white, 12vmin 12vmin 0 white, 5vmin 26vmin 0 white, 57vmin 32vmin 0 white, 50vmin 40vmin 0 white, 40vmin 12vmin 0 white, 55vmin 21vmin 0 white, 11vmin 40vmin 0 white, 19vmin 23vmin 0 white, 83vmin 8vmin 0 white, 12vmin 43vmin 0 white, 9vmin 27vmin 0 white, 62vmin 21vmin 0 white, 74vmin 17vmin 0 white, 3vmin 19vmin 0 white, 5vmin 42vmin 0 white, 30vmin 24vmin 0 white, 75vmin 11vmin 0 white, 64vmin 47vmin 0 white, 31vmin 40vmin 0 white, 79vmin 48vmin 0 white, 74vmin 5vmin 0 white, 67vmin 41vmin 0 white, 72vmin 41vmin 0 white, 64vmin 49vmin 0 white, 56vmin 14vmin 0 white, 15vmin 2vmin 0 white, 35vmin 27vmin 0 white, 8vmin 6vmin 0 white, 21vmin 26vmin 0 white, 80vmin 29vmin 0 white, 58vmin 6vmin 0 white, 52vmin 47vmin 0 white, 8vmin 40vmin 0 white, 74vmin 35vmin 0 white, 3vmin 8vmin 0 white, 44vmin 34vmin 0 white, 9vmin 5vmin 0 white, 28vmin 13vmin 0 white, 42vmin 5vmin 0 white, 19vmin 28vmin 0 white, 87vmin 39vmin 0 white, 45vmin 16vmin 0 white, 21vmin 3vmin 0 white, 9vmin 44vmin 0 white;
+}
+#card:after {
+  height: 3px;
+  width: 3px;
+  transform: translateZ(2rem);
+  box-shadow: 87vmin 37vmin 0 white, 5vmin 4vmin 0 white, 14vmin 29vmin 0 white, 17vmin 11vmin 0 white, 50vmin 23vmin 0 white, 72vmin 21vmin 0 white, 21vmin 40vmin 0 white, 18vmin 4vmin 0 white, 49vmin 25vmin 0 white, 77vmin 7vmin 0 white, 14vmin 13vmin 0 white, 34vmin 2vmin 0 white, 42vmin 22vmin 0 white, 54vmin 25vmin 0 white, 8vmin 43vmin 0 white, 58vmin 5vmin 0 white, 87vmin 4vmin 0 white, 10vmin 1vmin 0 white, 40vmin 45vmin 0 white, 29vmin 11vmin 0 white, 5vmin 39vmin 0 white, 42vmin 47vmin 0 white, 9vmin 1vmin 0 white, 89vmin 45vmin 0 white, 42vmin 5vmin 0 white, 70vmin 43vmin 0 white, 26vmin 18vmin 0 white, 45vmin 50vmin 0 white, 12vmin 5vmin 0 white, 66vmin 33vmin 0 white, 90vmin 6vmin 0 white, 74vmin 24vmin 0 white, 64vmin 50vmin 0 white, 43vmin 18vmin 0 white, 17vmin 18vmin 0 white, 22vmin 45vmin 0 white, 2vmin 42vmin 0 white, 4vmin 12vmin 0 white, 70vmin 14vmin 0 white, 26vmin 31vmin 0 white, 82vmin 12vmin 0 white, 10vmin 23vmin 0 white, 30vmin 48vmin 0 white, 46vmin 35vmin 0 white, 40vmin 23vmin 0 white, 18vmin 34vmin 0 white, 63vmin 19vmin 0 white, 53vmin 50vmin 0 white, 11vmin 20vmin 0 white, 76vmin 6vmin 0 white;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: linear-gradient(to bottom, #dbe6ed, #cfdde5);
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  position: relative;
+}
